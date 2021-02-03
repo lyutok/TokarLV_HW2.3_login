@@ -20,6 +20,15 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func forgotUserNamePressed(_ sender: UIButton) {
+        
+        let alertController = UIAlertController(title: "Oops",
+                                                message: "Your user name is User",
+                                                preferredStyle: .alert)
+        let alertOkAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(alertOkAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
     }
     
     @IBAction func forgotPasswordPressed(_ sender: UIButton) {
