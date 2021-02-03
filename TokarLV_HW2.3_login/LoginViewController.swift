@@ -14,21 +14,29 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        userNameTextField.returnKeyType = .next
+        passwordTextField.returnKeyType = .done
     }
     
-    
-    @IBAction func forgotUserNamePressed(_ sender: UIButton) {
+    @IBAction func ButtonsPressed(_ sender: UIButton) {
         
-        let alertController = UIAlertController(title: "Oops",
-                                                message: "Your user name is User",
-                                                preferredStyle: .alert)
-        let alertOkAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(alertOkAction)
-        
-        present(alertController, animated: true, completion: nil)
-        
+        switch sender.tag {
+        case 0:
+            if userNameTextField.text != "User" || passwordTextField.text != "12345" {
+                
+                showAlert(title: "Invalid login or password!", message: "Please, enter correct login and password.")
+                passwordTextField.text = ""
+            }
+            
+        case 1:
+            showAlert(title: "Oops 🙃", message: "Your username is User.")
+            userNameTextField.text = ""
+        case 2:
+            showAlert(title: "Oops 🙃", message: "Your password is 12345.")
+            passwordTextField.text = ""
+        default: break
+        }
     }
     
     @IBAction func forgotPasswordPressed(_ sender: UIButton) {
@@ -41,10 +49,24 @@ class LoginViewController: UIViewController {
         welcomeScreen.userName = userNameTextField.text
     }
     
+    //hide keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
-}
     
+    //alerts
+    private func showAlert(title: String, message: String)
+    {
+        let alertController = UIAlertController(title: title,
+                                                message: message,
+                                                preferredStyle: .alert)
+        let alertOkAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(alertOkAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
+    }
+
+}
 
