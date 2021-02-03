@@ -1,4 +1,3 @@
-//
 //  LoginViewController.swift
 //  TokarLV_HW2.3_login
 //
@@ -42,10 +41,9 @@ class LoginViewController: UIViewController {
     @IBAction func forgotPasswordPressed(_ sender: UIButton) {
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeScreen = segue.destination as? WelcomeViewController else { return }
-
+        
         welcomeScreen.userName = userNameTextField.text
     }
     
@@ -53,7 +51,6 @@ class LoginViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
     
     //alerts
     private func showAlert(title: String, message: String)
@@ -65,8 +62,7 @@ class LoginViewController: UIViewController {
         alertController.addAction(alertOkAction)
         
         present(alertController, animated: true, completion: nil)
-        
     }
-
+    
 }
 

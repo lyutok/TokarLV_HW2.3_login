@@ -1,4 +1,3 @@
-//
 //  WelcomeViewController.swift
 //  TokarLV_HW2.3_login
 //
@@ -15,10 +14,10 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         welcomeLabel.text = "Welcome, \(userName!)!"
     }
-
+    
     @IBAction func logOutButtonPressed(_ sender: UIButton) {
         dismiss(animated: true)
     }
