@@ -97,6 +97,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ziq-QS-wEd" customClass="GradientView" customModule="TokarLV_HW2_3_login" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" systemColor="systemTealColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0Y-3O-9QV">
                                 <rect key="frame" x="125.66666666666669" y="194" width="177" height="39.666666666666657"/>
                                 <constraints>
@@ -124,14 +136,18 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6xm-nQ-o1K"/>
-                        <color key="backgroundColor" red="0.69887006282806396" green="0.52927654981613159" blue="0.91124409437179565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Iwt-OZ-wa2" firstAttribute="centerX" secondItem="6xm-nQ-o1K" secondAttribute="centerX" id="7iC-Y7-sGM"/>
+                            <constraint firstItem="ziq-QS-wEd" firstAttribute="bottom" secondItem="zt5-h7-tKS" secondAttribute="bottom" id="AmA-Ex-VCS"/>
                             <constraint firstItem="6xm-nQ-o1K" firstAttribute="bottom" secondItem="WEx-iH-fgP" secondAttribute="bottom" constant="100" id="DGN-s5-0Rq"/>
                             <constraint firstItem="N0Y-3O-9QV" firstAttribute="top" secondItem="6xm-nQ-o1K" secondAttribute="top" constant="150" id="PEk-0J-7AF"/>
                             <constraint firstItem="N0Y-3O-9QV" firstAttribute="centerX" secondItem="6xm-nQ-o1K" secondAttribute="centerX" id="af9-Y3-mFK"/>
+                            <constraint firstItem="ziq-QS-wEd" firstAttribute="leading" secondItem="zt5-h7-tKS" secondAttribute="leading" id="dy9-fb-8nx"/>
+                            <constraint firstItem="ziq-QS-wEd" firstAttribute="trailing" secondItem="zt5-h7-tKS" secondAttribute="trailing" id="ftE-Wc-6Xd"/>
                             <constraint firstItem="WEx-iH-fgP" firstAttribute="centerX" secondItem="6xm-nQ-o1K" secondAttribute="centerX" id="kWm-g0-Pas"/>
+                            <constraint firstItem="ziq-QS-wEd" firstAttribute="top" secondItem="zt5-h7-tKS" secondAttribute="top" id="uyu-PU-nXd"/>
                             <constraint firstItem="Iwt-OZ-wa2" firstAttribute="top" secondItem="N0Y-3O-9QV" secondAttribute="bottom" constant="40" id="wBP-y9-Pkt"/>
                         </constraints>
                     </view>
@@ -148,6 +164,12 @@
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

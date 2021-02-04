@@ -14,6 +14,7 @@
 		20339D5A25CA9414000469AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20339D5825CA9414000469AE /* LaunchScreen.storyboard */; };
 		20339D6325CA9524000469AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20339D6225CA9524000469AE /* LoginViewController.swift */; };
 		20339D6E25CAFA98000469AE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20339D6D25CAFA98000469AE /* WelcomeViewController.swift */; };
+		20B6593725CC9D9E004E23F8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6593625CC9D9E004E23F8 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		20339D5B25CA9414000469AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20339D6225CA9524000469AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		20339D6D25CAFA98000469AE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		20B6593625CC9D9E004E23F8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				20339D4F25CA940F000469AE /* SceneDelegate.swift */,
 				20339D6225CA9524000469AE /* LoginViewController.swift */,
 				20339D6D25CAFA98000469AE /* WelcomeViewController.swift */,
+				20B6593625CC9D9E004E23F8 /* GradientView.swift */,
 				20339D5325CA940F000469AE /* Main.storyboard */,
 				20339D5625CA9414000469AE /* Assets.xcassets */,
 				20339D5825CA9414000469AE /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B6593725CC9D9E004E23F8 /* GradientView.swift in Sources */,
 				20339D6325CA9524000469AE /* LoginViewController.swift in Sources */,
 				20339D6E25CAFA98000469AE /* WelcomeViewController.swift in Sources */,
 				20339D4E25CA940F000469AE /* AppDelegate.swift in Sources */,
