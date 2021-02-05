@@ -9,7 +9,10 @@ import UIKit
 class LoginViewController: UIViewController {
     
     @IBOutlet var userNameTextField: UITextField!
-    @IBOutlet var passwordTextField: UITextField! 
+    @IBOutlet var passwordTextField: UITextField!
+    
+    private let username = "User"
+    private let password = "12345"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,17 +25,17 @@ class LoginViewController: UIViewController {
         
         switch sender.tag {
         case 0:
-            if userNameTextField.text != "User" || passwordTextField.text != "12345" {
+            if userNameTextField.text != username || passwordTextField.text != password {
                 
                 showAlert(title: "Invalid login or password!", message: "Please, enter correct login and password.")
                 passwordTextField.text = ""
             }
             
         case 1:
-            showAlert(title: "Oops 🙃", message: "Your username is User.")
+            showAlert(title: "Oops 🙃", message: "Your username is \(username).")
             userNameTextField.text = ""
         case 2:
-            showAlert(title: "Oops 🙃", message: "Your password is 12345.")
+            showAlert(title: "Oops 🙃", message: "Your password is \(password).")
             passwordTextField.text = ""
         default: break
         }
