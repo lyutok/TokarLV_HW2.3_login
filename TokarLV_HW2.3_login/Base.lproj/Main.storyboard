@@ -61,7 +61,6 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="ButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDU-f3-iR3"/>
-                                    <segue destination="jtG-pM-hKi" kind="presentation" id="8hX-Zw-WHT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,6 +82,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="yUF-0l-cr5" id="9ue-N3-lzP"/>
                         <outlet property="userNameTextField" destination="EgG-ds-TG3" id="RVc-jl-r5h"/>
+                        <segue destination="jtG-pM-hKi" kind="show" identifier="welcomeSegue" id="U4A-Em-1n4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -131,7 +131,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
-                                    <action selector="logOutButtonPressed:" destination="jtG-pM-hKi" eventType="touchUpInside" id="t2m-kk-OI5"/>
+                                    <segue destination="lzf-Fy-KH6" kind="unwind" unwindAction="unwindSegwayToLoginScreenWithSegway:" id="QG7-iF-xhA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -157,6 +157,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSs-y2-Q7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="lzf-Fy-KH6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="521.49532710280369" y="34.341252699784022"/>
         </scene>

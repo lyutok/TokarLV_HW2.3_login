@@ -29,6 +29,8 @@ class LoginViewController: UIViewController {
                 
                 showAlert(title: "Invalid login or password!", message: "Please, enter correct login and password.")
                 passwordTextField.text = ""
+            } else {
+                performSegue(withIdentifier: "welcomeSegue", sender: nil)
             }
             
         case 1:
@@ -41,7 +43,11 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func forgotPasswordPressed(_ sender: UIButton) {
+    @IBAction func unwindSegwayToLoginScreen(segway: UIStoryboardSegue){
+        guard let _ = segway.source as? WelcomeViewController else { return }
+        
+        userNameTextField.text = ""
+        passwordTextField.text = ""
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -49,6 +55,7 @@ class LoginViewController: UIViewController {
         
         welcomeScreen.userName = userNameTextField.text
     }
+    
     
     //hide keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
