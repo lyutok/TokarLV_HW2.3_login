@@ -14,6 +14,7 @@
 		20339D5A25CA9414000469AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20339D5825CA9414000469AE /* LaunchScreen.storyboard */; };
 		20339D6325CA9524000469AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20339D6225CA9524000469AE /* LoginViewController.swift */; };
 		20339D6E25CAFA98000469AE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20339D6D25CAFA98000469AE /* WelcomeViewController.swift */; };
+		20B5F2E725D0950F00BF3DC9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5F2E625D0950F00BF3DC9 /* User.swift */; };
 		20B6593725CC9D9E004E23F8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6593625CC9D9E004E23F8 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		20339D5B25CA9414000469AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20339D6225CA9524000469AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		20339D6D25CAFA98000469AE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		20B5F2E625D0950F00BF3DC9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		20B6593625CC9D9E004E23F8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 		20B5F2E025D05E0100BF3DC9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				20B5F2E625D0950F00BF3DC9 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			files = (
 				20B6593725CC9D9E004E23F8 /* GradientView.swift in Sources */,
 				20339D6325CA9524000469AE /* LoginViewController.swift in Sources */,
+				20B5F2E725D0950F00BF3DC9 /* User.swift in Sources */,
 				20339D6E25CAFA98000469AE /* WelcomeViewController.swift in Sources */,
 				20339D4E25CA940F000469AE /* AppDelegate.swift in Sources */,
 				20339D5025CA940F000469AE /* SceneDelegate.swift in Sources */,
