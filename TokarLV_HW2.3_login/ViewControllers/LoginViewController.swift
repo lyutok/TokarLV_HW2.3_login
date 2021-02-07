@@ -11,8 +11,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private let username = "User"
-    private let password = "12345"
+//    private let username = "User"
+//    private let password = "12345"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeScreen = segue.destination as? WelcomeViewController else { return }
         
-        welcomeScreen.userName = username
+        welcomeScreen.userName = User.myInfo().name
     }
     
     // hide keyboard
@@ -46,7 +46,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             
             switch sender.tag {
             case 0:
-                if userNameTextField.text != username || passwordTextField.text != password {
+                if userNameTextField.text != User.myInfo().username || passwordTextField.text != User.myInfo().password {
                     
                     showAlert(title: "Invalid login or password!", message: "Please, enter correct login and password.")
                     passwordTextField.text = ""
@@ -55,10 +55,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 }
                 
             case 1:
-                showAlert(title: "Oops 🙃", message: "Your username is \(username).")
+                showAlert(title: "Oops 🙃", message: "Your username is \(User.myInfo().username).")
                 userNameTextField.text = ""
             case 2:
-                showAlert(title: "Oops 🙃", message: "Your password is \(password).")
+                showAlert(title: "Oops 🙃", message: "Your password is \(User.myInfo().password).")
                 passwordTextField.text = ""
             default:
                 break

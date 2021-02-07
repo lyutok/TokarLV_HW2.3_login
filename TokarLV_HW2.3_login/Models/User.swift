@@ -6,6 +6,8 @@
 //
 
 struct User{
+    let username: String
+    let password: String
     let name: String
     let surname: String
     let hobby: String
@@ -14,7 +16,8 @@ struct User{
 }
 
 extension User {
-    static func getInfo() -> User {
-        User(name: "Lyudmila", surname: "Tokar", hobby: "Travelling, learning languages, reading", email: "tokarlyudmila@gmail.com", profession: "QA")
+    static func myInfo() -> User {
+        User(username: "User", password: "12345", name: "Lyudmila", surname: "Tokar", hobby: "Travelling, learning languages, reading", email: "tokarlyudmila@gmail.com", profession: "QA")
     }
 }
+
