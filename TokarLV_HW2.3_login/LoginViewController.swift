@@ -19,9 +19,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         userNameTextField.returnKeyType = .next
         userNameTextField.delegate = self
+        
         passwordTextField.returnKeyType = .done
         passwordTextField.delegate = self
     }
+    
+
+    // Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeScreen = segue.destination as? WelcomeViewController else { return }
+        
+        welcomeScreen.userName = username
+    }
+    
+    // hide keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    //??? Так не получается (клавиатура не прячется)
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//    super.touchesBegan(touches, with: event)
+//    }
     
     @IBAction func ButtonsPressed(_ sender: UIButton) {
             
@@ -53,23 +72,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.text = ""
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeScreen = segue.destination as? WelcomeViewController else { return }
-        
-        welcomeScreen.userName = username
-    }
-    
-    //hide keyboard
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-    }
-    
-    //??? Так не получается (клавиатура не прячется)
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//    super.touchesBegan(touches, with: event)
-//    }
-    
-    //alerts
+    //MARK: Alerts, Hide Keyboard
     private func showAlert(title: String, message: String)
     {
         let alertController = UIAlertController(title: title,
@@ -86,7 +89,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if textField == userNameTextField { // Switch focus to other text field
             passwordTextField.becomeFirstResponder()
         } else {
-            print("Работает Nex/Done")
+            print("Работает Next/Done")
         }
         return true
     }
