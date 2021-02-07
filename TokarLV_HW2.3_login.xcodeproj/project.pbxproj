@@ -60,17 +60,65 @@
 		20339D4C25CA940F000469AE /* TokarLV_HW2.3_login */ = {
 			isa = PBXGroup;
 			children = (
-				20339D4D25CA940F000469AE /* AppDelegate.swift */,
-				20339D4F25CA940F000469AE /* SceneDelegate.swift */,
-				20339D6225CA9524000469AE /* LoginViewController.swift */,
-				20339D6D25CAFA98000469AE /* WelcomeViewController.swift */,
-				20B6593625CC9D9E004E23F8 /* GradientView.swift */,
-				20339D5325CA940F000469AE /* Main.storyboard */,
-				20339D5625CA9414000469AE /* Assets.xcassets */,
-				20339D5825CA9414000469AE /* LaunchScreen.storyboard */,
-				20339D5B25CA9414000469AE /* Info.plist */,
+				20B5F2D525D05C0100BF3DC9 /* ViewControllers */,
+				20B5F2E025D05E0100BF3DC9 /* Models */,
+				20B5F2D725D05C3800BF3DC9 /* StoryBoards */,
+				20B5F2DE25D05DD100BF3DC9 /* AdditionalFiles */,
+				20B5F2DA25D05C8F00BF3DC9 /* Resourses */,
+				20B5F2D825D05C6800BF3DC9 /* SupportFiles */,
 			);
 			path = TokarLV_HW2.3_login;
+			sourceTree = "<group>";
+		};
+		20B5F2D525D05C0100BF3DC9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				20339D6225CA9524000469AE /* LoginViewController.swift */,
+				20339D6D25CAFA98000469AE /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		20B5F2D725D05C3800BF3DC9 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				20339D5325CA940F000469AE /* Main.storyboard */,
+				20339D5825CA9414000469AE /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		20B5F2D825D05C6800BF3DC9 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				20339D4D25CA940F000469AE /* AppDelegate.swift */,
+				20339D4F25CA940F000469AE /* SceneDelegate.swift */,
+				20339D5B25CA9414000469AE /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		20B5F2DA25D05C8F00BF3DC9 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				20339D5625CA9414000469AE /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		20B5F2DE25D05DD100BF3DC9 /* AdditionalFiles */ = {
+			isa = PBXGroup;
+			children = (
+				20B6593625CC9D9E004E23F8 /* GradientView.swift */,
+			);
+			path = AdditionalFiles;
+			sourceTree = "<group>";
+		};
+		20B5F2E025D05E0100BF3DC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7W7DULXL8;
-				INFOPLIST_FILE = TokarLV_HW2.3_login/Info.plist;
+				INFOPLIST_FILE = TokarLV_HW2.3_login/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X7W7DULXL8;
-				INFOPLIST_FILE = TokarLV_HW2.3_login/Info.plist;
+				INFOPLIST_FILE = TokarLV_HW2.3_login/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
