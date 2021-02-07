@@ -18,14 +18,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         userNameTextField.returnKeyType = .next
+        userNameTextField.delegate = self
         passwordTextField.returnKeyType = .done
+        passwordTextField.delegate = self
     }
-    //не пойму, что я делаю не так
-    @IBAction func ButtonsPressed(_ sender: Any?) {
-        
-        if let button = sender as? UIButton {
+    
+    @IBAction func ButtonsPressed(_ sender: UIButton) {
             
-            switch button.tag {
+            switch sender.tag {
             case 0:
                 if userNameTextField.text != username || passwordTextField.text != password {
                     
@@ -44,12 +44,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             default:
                 break
             }
-        } else {
-            performSegue(withIdentifier: "welcomeSegue", sender: nil) // ожидаю, что по нажатию на Done - будет показан велкам экран - что не так? как указать , что done нажата?
-        }
-        
     }
-    
     
     @IBAction func unwindSegwayToLoginScreen(segway: UIStoryboardSegue){
         guard let _ = segway.source as? WelcomeViewController else { return }
@@ -69,6 +64,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
+    //??? Так не получается (клавиатура не прячется)
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//    super.touchesBegan(touches, with: event)
+//    }
+    
     //alerts
     private func showAlert(title: String, message: String)
     {
@@ -79,6 +79,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         alertController.addAction(alertOkAction)
         
         present(alertController, animated: true, completion: nil)
+    }
+  
+    //????не работает переход по кнопкам клавиатуры
+   private func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == userNameTextField { // Switch focus to other text field
+            passwordTextField.becomeFirstResponder()
+        } else {
+            print("Работает Nex/Done")
+        }
+        return true
     }
     
 }
