@@ -11,7 +11,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-//    private let username = "User"
+  //  private let username = User.myInfo().name
 //    private let password = "12345"
     
     override func viewDidLoad() {
@@ -32,6 +32,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         welcomeScreen.userName = User.myInfo().name
     }
     
+  //  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  //  let tabBarController = segue.destination as! UITabBarControl
+  //  for viewController in viewControllers {
+ //   if let welcomeVC = viewController as? WelcomeViewController {
+ //   }
+   
+
     // hide keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
