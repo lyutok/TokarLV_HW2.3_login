@@ -171,8 +171,7 @@
         <!--About-->
         <scene sceneID="DIu-r3-7Lw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OxU-1L-nbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController modalPresentationStyle="fullScreen" id="AaG-uv-c9F" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="AaG-uv-c9F" customClass="MoreInfoViewController" customModule="TokarLV_HW2_3_login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="goc-TK-0Jg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,13 +194,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="questionmark.folder" catalog="system" id="YUS-Cc-gjd"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OxU-1L-nbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2256" y="-437"/>
         </scene>
         <!--Hobby-->
         <scene sceneID="zdH-Ek-doe">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="HIG-7n-EWE" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="HIG-7n-EWE" customClass="HobbyViewController" customModule="TokarLV_HW2_3_login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IAW-q8-jR0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -237,7 +237,7 @@
         <!--End-->
         <scene sceneID="QtU-2u-ew5">
             <objects>
-                <viewController id="i7H-oT-Jh4" sceneMemberID="viewController">
+                <viewController id="i7H-oT-Jh4" customClass="LastPageViewController" customModule="TokarLV_HW2_3_login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hip-kL-EsI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="4798" y="-440"/>
         </scene>
-        <!--View Controller-->
+        <!--Email View Controller-->
         <scene sceneID="wVI-hm-GIu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="MKX-ff-Q1X" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="MKX-ff-Q1X" customClass="EmailViewController" customModule="TokarLV_HW2_3_login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZo-er-jn0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,11 +300,11 @@
         <!--Tab Bar Controller-->
         <scene sceneID="HqE-VH-o9T">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5aa-vv-Xjx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="9YI-WM-Xkp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="egj-pr-YDC"/>
                     <tabBar key="tabBar" contentMode="center" semanticContentAttribute="playback" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="GrP-TA-0RE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -314,6 +314,7 @@
                         <segue destination="AaG-uv-c9F" kind="relationship" relationship="viewControllers" id="Mxq-bx-VsL"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aa-vv-Xjx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="521.25" y="33.802816901408448"/>
         </scene>

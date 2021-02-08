@@ -17,7 +17,13 @@ struct User{
 
 extension User {
     static func myInfo() -> User {
-        User(username: "User", password: "12345", name: "Lyudmila", surname: "Tokar", hobby: "Travelling, learning languages, reading", email: "tokarlyudmila@gmail.com", profession: "QA")
+        User(username: "User",
+             password: "12345",
+             name: "Lyudmila",
+             surname: "Tokar",
+             hobby: "Travelling, learning languages, reading",
+             email: "tokarlyudmila@gmail.com",
+             profession: "QA")
     }
 }
 

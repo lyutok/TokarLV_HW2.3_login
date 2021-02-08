@@ -15,6 +15,10 @@
 		20339D6325CA9524000469AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20339D6225CA9524000469AE /* LoginViewController.swift */; };
 		20339D6E25CAFA98000469AE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20339D6D25CAFA98000469AE /* WelcomeViewController.swift */; };
 		20B5F2E725D0950F00BF3DC9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5F2E625D0950F00BF3DC9 /* User.swift */; };
+		20B5F2EA25D1312D00BF3DC9 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5F2E925D1312D00BF3DC9 /* EmailViewController.swift */; };
+		20B5F2ED25D13A6500BF3DC9 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5F2EC25D13A6500BF3DC9 /* MoreInfoViewController.swift */; };
+		20B5F2F125D13A9A00BF3DC9 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5F2F025D13A9A00BF3DC9 /* HobbyViewController.swift */; };
+		20B5F2F425D13ACA00BF3DC9 /* LastPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B5F2F325D13ACA00BF3DC9 /* LastPageViewController.swift */; };
 		20B6593725CC9D9E004E23F8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B6593625CC9D9E004E23F8 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		20339D6225CA9524000469AE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		20339D6D25CAFA98000469AE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		20B5F2E625D0950F00BF3DC9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		20B5F2E925D1312D00BF3DC9 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		20B5F2EC25D13A6500BF3DC9 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		20B5F2F025D13A9A00BF3DC9 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		20B5F2F325D13ACA00BF3DC9 /* LastPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPageViewController.swift; sourceTree = "<group>"; };
 		20B6593625CC9D9E004E23F8 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +85,10 @@
 			children = (
 				20339D6225CA9524000469AE /* LoginViewController.swift */,
 				20339D6D25CAFA98000469AE /* WelcomeViewController.swift */,
+				20B5F2E925D1312D00BF3DC9 /* EmailViewController.swift */,
+				20B5F2EC25D13A6500BF3DC9 /* MoreInfoViewController.swift */,
+				20B5F2F025D13A9A00BF3DC9 /* HobbyViewController.swift */,
+				20B5F2F325D13ACA00BF3DC9 /* LastPageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,9 +209,13 @@
 				20B6593725CC9D9E004E23F8 /* GradientView.swift in Sources */,
 				20339D6325CA9524000469AE /* LoginViewController.swift in Sources */,
 				20B5F2E725D0950F00BF3DC9 /* User.swift in Sources */,
+				20B5F2F125D13A9A00BF3DC9 /* HobbyViewController.swift in Sources */,
 				20339D6E25CAFA98000469AE /* WelcomeViewController.swift in Sources */,
 				20339D4E25CA940F000469AE /* AppDelegate.swift in Sources */,
+				20B5F2ED25D13A6500BF3DC9 /* MoreInfoViewController.swift in Sources */,
+				20B5F2EA25D1312D00BF3DC9 /* EmailViewController.swift in Sources */,
 				20339D5025CA940F000469AE /* SceneDelegate.swift in Sources */,
+				20B5F2F425D13ACA00BF3DC9 /* LastPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
