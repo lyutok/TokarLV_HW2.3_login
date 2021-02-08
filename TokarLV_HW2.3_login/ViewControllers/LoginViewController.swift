@@ -40,26 +40,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
    
 
     // hide keyboard
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-    }
-    
-    //??? Так не получается (клавиатура не прячется)
 //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//    super.touchesBegan(touches, with: event)
+//        view.endEditing(true)
 //    }
+    
+    //hide keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesBegan(touches, with: event)
+    view.endEditing(true)
+    }
     
     @IBAction func ButtonsPressed(_ sender: UIButton) {
             
             switch sender.tag {
             case 0:
-                if userNameTextField.text != User.myInfo().username || passwordTextField.text != User.myInfo().password {
-                    
-                    showAlert(title: "Invalid login or password!", message: "Please, enter correct login and password.")
-                    passwordTextField.text = ""
-                } else {
-                    performSegue(withIdentifier: "welcomeSegue", sender: nil)
-                }
+                goToWelcomeScreen()
                 
             case 1:
                 showAlert(title: "Oops 🙃", message: "Your username is \(User.myInfo().username).")
@@ -91,15 +86,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         present(alertController, animated: true, completion: nil)
     }
   
-    //????не работает переход по кнопкам клавиатуры
-   private func textFieldShouldReturn(textField: UITextField) -> Bool {
+    
+    //переход по кнопкам клавиатуры
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == userNameTextField { // Switch focus to other text field
             passwordTextField.becomeFirstResponder()
         } else {
-            print("Работает Next/Done")
+             goToWelcomeScreen()
         }
         return true
     }
     
+    //переход к Велкам экрану
+    func goToWelcomeScreen() {
+        if userNameTextField.text != User.myInfo().username || passwordTextField.text != User.myInfo().password {
+            
+            showAlert(title: "Invalid login or password!", message: "Please, enter correct login and password.")
+            passwordTextField.text = ""
+        } else {
+            performSegue(withIdentifier: "welcomeSegue", sender: nil)
+        }
+    }
+    
 }
+
 
