@@ -9,6 +9,8 @@ import UIKit
 
 class LastPageViewController: UIViewController {
 
+    @IBOutlet var emojiLablel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

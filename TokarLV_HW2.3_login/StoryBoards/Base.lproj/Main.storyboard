@@ -229,6 +229,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="hobbyLabel" destination="kgZ-MK-Aah" id="myE-Kz-HHv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trI-SZ-XRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -263,6 +266,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emojiLablel" destination="mIv-0b-b99" id="1s7-Ax-1Oy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XnL-Uf-n01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="iRp-WW-me2" userLabel="Exit" sceneMemberID="exit"/>
@@ -292,6 +298,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="paperplane" catalog="system" id="XMo-dS-i7o"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="9lT-ZC-0I9" id="v1U-E4-Uyn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3L2-LD-8p3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

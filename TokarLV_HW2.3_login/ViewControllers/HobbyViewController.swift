@@ -9,6 +9,8 @@ import UIKit
 
 class HobbyViewController: UIViewController {
 
+    @IBOutlet var hobbyLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

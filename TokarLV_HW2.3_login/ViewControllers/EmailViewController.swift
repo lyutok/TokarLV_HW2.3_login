@@ -9,6 +9,8 @@ import UIKit
 
 class EmailViewController: UIViewController {
 
+    @IBOutlet var emailLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
