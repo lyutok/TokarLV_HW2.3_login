@@ -10,15 +10,15 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet var welcomeLabel: UILabel!
     
-    var userName: String?
+    var user: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        if let _ = self.userName {
-            welcomeLabel.text = "Welcome, \(userName!)!"
+
+        if let _ = self.user {
+            welcomeLabel.text = "Welcome, \(user!.fullName)!"
         } else { return }
-    }
+   }
     
 //
 //    @IBAction func logOutButtonPressed(_ sender: UIButton) {

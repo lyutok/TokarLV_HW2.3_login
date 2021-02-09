@@ -11,8 +11,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-  //  private let username = User.myInfo().name
-//    private let password = "12345"
+ //получение экземпляра модели
+    private let user = User.myInfo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,23 +27,31 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     // Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeScreen = segue.destination as? WelcomeViewController else { return }
         
-        welcomeScreen.userName = User.myInfo().name
-    }
-    
-  //  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-  //  let tabBarController = segue.destination as! UITabBarControl
-  //  for viewController in viewControllers {
- //   if let welcomeVC = viewController as? WelcomeViewController {
- //   }
-   
+        let tabBarController = segue.destination as! UITabBarController
+        print("!!!")
+        guard let tbVC = tabBarController.viewControllers else { return }
+        print(tbVC.count)
+        for viewController in tbVC {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.user = user
+        } else if let emailVC = viewController as? EmailViewController {
+            emailVC.user = user
+        } else if let aboutVC = viewController as? MoreInfoViewController {
+            print ("11")
+        }
+            //let navigationVC = viewController as! UINavigationController
+            gationController?.topViewController as! HobbyViewController
+            hobbyVC.user = user
+//            let professionVC = navigationVC.viewControllers.last as! LastPageViewController
+//            professionVC.user = user
+            
+        
+        
+        }        
+       
+        }
 
-    // hide keyboard
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        view.endEditing(true)
-//    }
-    
     //hide keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     super.touchesBegan(touches, with: event)
@@ -68,10 +76,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func unwindSegwayToLoginScreen(segway: UIStoryboardSegue){
-        guard let _ = segway.source as? WelcomeViewController else { return }
-        
+//       guard let _ = segway.source as? WelcomeViewController else { return }
+//            userNameTextField.text = ""
+//            passwordTextField.text = ""
+
+        if let _ = segway.source as? WelcomeViewController {
+            userNameTextField.text = ""
+            passwordTextField.text = ""
+        } else {
+        let _ = segway.source as? LastPageViewController
         userNameTextField.text = ""
-        passwordTextField.text = ""
+            passwordTextField.text = ""}
     }
     
     //MARK: Alerts, Hide Keyboard

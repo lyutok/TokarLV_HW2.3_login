@@ -13,6 +13,10 @@ struct User{
     let hobby: String
     let email: String
     let profession: String
+    
+    var fullName: String {
+        "\(name) \(surname)"
+    }
 }
 
 extension User {

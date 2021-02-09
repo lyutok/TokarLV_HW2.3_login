@@ -95,7 +95,7 @@
             </objects>
             <point key="canvasLocation" x="-375" y="34"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--welcome-->
         <scene sceneID="jsD-qA-WeQ">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="jtG-pM-hKi" customClass="WelcomeViewController" customModule="TokarLV_HW2_3_login" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,10 +115,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0Y-3O-9QV">
-                                <rect key="frame" x="71.5" y="150" width="177" height="39.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0Y-3O-9QV">
+                                <rect key="frame" x="119" y="150" width="82" height="39.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="177" id="dMb-Vc-GNq"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="dMb-Vc-GNq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -157,7 +157,7 @@
                             <constraint firstItem="Iwt-OZ-wa2" firstAttribute="top" secondItem="N0Y-3O-9QV" secondAttribute="bottom" constant="40" id="wBP-y9-Pkt"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" enabled="NO" title="" id="Ryz-Q3-MZW"/>
+                    <tabBarItem key="tabBarItem" title="welcome" image="pencil" catalog="system" id="Ryz-Q3-MZW"/>
                     <navigationItem key="navigationItem" id="ov0-YB-oLs"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="N0Y-3O-9QV" id="uIF-0E-1Gd"/>
@@ -166,7 +166,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSs-y2-Q7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="lzf-Fy-KH6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1425" y="34"/>
+            <point key="canvasLocation" x="148" y="828"/>
         </scene>
         <!--About-->
         <scene sceneID="DIu-r3-7Lw">
@@ -196,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OxU-1L-nbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2256" y="-437"/>
+            <point key="canvasLocation" x="1470" y="34"/>
         </scene>
         <!--Hobby-->
         <scene sceneID="zdH-Ek-doe">
@@ -235,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trI-SZ-XRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3905.625" y="-437.32394366197184"/>
+            <point key="canvasLocation" x="3373" y="34"/>
         </scene>
         <!--End-->
         <scene sceneID="QtU-2u-ew5">
@@ -267,13 +267,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="emojiLablel" destination="mIv-0b-b99" id="1s7-Ax-1Oy"/>
+                        <outlet property="profession" destination="mIv-0b-b99" id="1s7-Ax-1Oy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XnL-Uf-n01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="iRp-WW-me2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4798" y="-440"/>
+            <point key="canvasLocation" x="4798" y="34"/>
         </scene>
         <!--Email View Controller-->
         <scene sceneID="wVI-hm-GIu">
@@ -304,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3L2-LD-8p3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286" y="375"/>
+            <point key="canvasLocation" x="1404" y="827"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HqE-VH-o9T">
@@ -346,11 +346,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHo-Io-tbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3088.125" y="-440.49295774647885"/>
+            <point key="canvasLocation" x="2522" y="34"/>
         </scene>
     </scenes>
     <resources>
         <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="questionmark.folder" catalog="system" width="128" height="97"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
