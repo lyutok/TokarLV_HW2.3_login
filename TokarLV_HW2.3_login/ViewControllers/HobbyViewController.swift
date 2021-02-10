@@ -8,17 +8,24 @@
 import UIKit
 
 class HobbyViewController: UIViewController {
-
-    @IBOutlet var hobbyLabel: UILabel!
     
-    var user: User?
+    @IBOutlet var hobbyLabel: UILabel!
+    private let user = User.myInfo()
+    
+    var user_from_moreInfo: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let _ = self.user {
-            hobbyLabel.text = user!.hobby
+        
+        if let _ = self.user_from_moreInfo {
+            hobbyLabel.text = user_from_moreInfo!.hobby
         } else { return }
     }
-
+    
+    //MARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let endVC = segue.destination as! LastPageViewController
+        endVC.user = user
+    }
 }

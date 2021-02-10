@@ -196,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OxU-1L-nbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="34"/>
+            <point key="canvasLocation" x="1721" y="34"/>
         </scene>
         <!--Hobby-->
         <scene sceneID="zdH-Ek-doe">
@@ -206,7 +206,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgZ-MK-Aah">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgZ-MK-Aah">
                                 <rect key="frame" x="30" y="250.5" width="260" height="158"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -225,7 +225,7 @@
                     <navigationItem key="navigationItem" title="Hobby" leftItemsSupplementBackButton="YES" id="doY-5j-uhc">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="OkO-85-CaT">
                             <connections>
-                                <segue destination="i7H-oT-Jh4" kind="show" id="NgE-aN-2L6"/>
+                                <segue destination="i7H-oT-Jh4" kind="show" id="ZxD-eU-7W4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -235,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trI-SZ-XRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3373" y="34"/>
+            <point key="canvasLocation" x="3272" y="34"/>
         </scene>
         <!--End-->
         <scene sceneID="QtU-2u-ew5">
@@ -262,7 +262,7 @@
                     <navigationItem key="navigationItem" title="End" id="xRm-TZ-ZWf">
                         <barButtonItem key="rightBarButtonItem" systemItem="redo" id="wUZ-RG-0z7">
                             <connections>
-                                <segue destination="iRp-WW-me2" kind="unwind" unwindAction="unwindSegwayToLoginScreenWithSegway:" id="yuE-jq-RFW"/>
+                                <segue destination="iRp-WW-me2" kind="unwind" unwindAction="unwindSegwayToLoginScreenWithSegway:" id="sId-Yg-gJ4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -273,7 +273,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XnL-Uf-n01" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="iRp-WW-me2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4798" y="34"/>
+            <point key="canvasLocation" x="4013" y="34"/>
         </scene>
         <!--Email View Controller-->
         <scene sceneID="wVI-hm-GIu">
@@ -341,12 +341,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="HIG-7n-EWE" kind="relationship" relationship="rootViewController" id="tgY-bx-Hqr"/>
+                        <segue destination="HIG-7n-EWE" kind="relationship" relationship="rootViewController" id="cGy-s6-Gyp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHo-Io-tbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2522" y="34"/>
+            <point key="canvasLocation" x="2524" y="34"/>
         </scene>
     </scenes>
     <resources>
